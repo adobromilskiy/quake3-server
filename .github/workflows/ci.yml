@@ -1,0 +1,22 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: build and push latest image
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        docker build -t adobromilskiy/quake3-server:latest .
+        docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
+        docker push adobromilskiy/quake3-server:latest
