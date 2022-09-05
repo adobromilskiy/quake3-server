@@ -1,0 +1,172 @@
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\0\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\GTV_CN\1\g_needpass\0\server_gameplay\CPM
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+600.1 Idle for 10 minutes: resetting back to defaults
+600.1 Game_Start: 1v1 in arena 0
+600.1 ShutdownGame:
+600.1 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\1\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm24\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\Score_Time\Warmup\Score_Red\0\Score_Blue\0\GTV_CN\1\g_needpass\0\mode_current\1V1\server_gameplay\CPM\mapconfig\cpm1a
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+86.5 ClientConnect: 0
+86.5 ClientUserinfoChanged: 0 n\Ignat\t\3\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+90.2 ClientUserinfoChanged: 0 n\Ignat\t\3\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+90.2 ClientBegin: 0
+90.3 ClientUserinfoChanged: 0 n\Ignat\t\0\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+90.3 ClientBegin: 0
+101.1 Item: 0 weapon_grenadelauncher
+103./ Item: 0 ammo_shells
+107.0 Item: 0 item_armor_shard
+107.1 Item: 0 item_armor_shard
+107.2 Item: 0 item_armor_shard
+108.1 Item: 0 weapon_rocketlauncher
+109.0 Item: 0 item_armor_combat
+112.5 Item: 0 item_health_small
+113.- Item: 0 item_health_small
+113./ Item: 0 item_health_small
+115.2 Item: 0 item_armor_body
+159.0 ShutdownGame:
+159.0 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\1\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\Score_Time\Warmup\Score_Red\0\Score_Blue\0\Players_Active\1 \GTV_CN\1\g_needpass\0\mode_current\1V1\server_gameplay\CPM
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+0.2 ClientConnect: 0
+0.2 ClientUserinfoChanged: 0 n\Ignat\t\0\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+5./ ClientBegin: 0
+7.2 Item: 0 item_armor_combat
+8.3 Item: 0 item_armor_shard
+8.4 Item: 0 item_armor_shard
+9., Item: 0 item_armor_shard
+9.- Item: 0 item_armor_shard
+14.2 Item: 0 item_health_large
+15.0 Item: 0 weapon_grenadelauncher
+18.. Item: 0 weapon_rocketlauncher
+28., Item: 0 weapon_railgun
+31.4 Item: 0 weapon_lightning
+36.2 Item: 0 item_health_small
+36.3 Item: 0 item_health_small
+36.5 Item: 0 item_health_small
+38./ Item: 0 weapon_lightning
+39.2 Item: 0 item_health_small
+40.1 Item: 0 item_armor_shard
+40.3 Item: 0 item_armor_shard
+40.5 Item: 0 item_armor_shard
+42., Item: 0 ammo_lightning
+43.. Item: 0 item_armor_shard
+43.. Item: 0 item_armor_shard
+43.0 Item: 0 item_armor_shard
+43.1 Item: 0 item_armor_shard
+46., Item: 0 ammo_slugs
+50.3 ShutdownGame:
+50.3 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\1\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm15\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\Score_Time\Warmup\Score_Red\0\Score_Blue\0\Players_Active\1 \GTV_CN\1\g_needpass\0\mode_current\1V1\server_gameplay\CPM\mapconfig\cpm1a
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+0.2 ClientConnect: 0
+0.2 ClientUserinfoChanged: 0 n\Ignat\t\0\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+5.3 ClientBegin: 0
+7.0 ShutdownGame:
+7.0 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\1\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm16\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\Score_Time\Warmup\Score_Red\0\Score_Blue\0\Players_Active\1 \GTV_CN\1\g_needpass\0\mode_current\1V1\server_gameplay\CPM
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 2v2 in arena 0
+0.2 ClientConnect: 0
+0.2 ClientUserinfoChanged: 0 n\Ignat\t\3\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+5./ ClientBegin: 0
+10.3 ClientUserinfoChanged: 0 n\Ignat\t\2\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+10.3 ClientBegin: 0
+16./ Item: 0 item_health
+20.1 Item: 0 item_health_mega
+22.. Item: 0 item_armor_shard
+22./ Item: 0 item_armor_shard
+24.. Item: 0 ammo_shells
+25., Item: 0 weapon_rocketlauncher
+29.2 Item: 0 item_armor_shard
+29.4 Item: 0 item_armor_shard
+30., Item: 0 item_health_small
+30.. Item: 0 item_health_small
+32.. Item: 0 item_armor_body
+51.1 Item: 0 item_health_small
+52.+ Item: 0 item_health_small
+57.+ ShutdownGame:
+57.+ ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\30\g_gametype\9\sv_maxclients\8\g_maxGameClients\0\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm17\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\Score_Time\Warmup\Score_Red\0\Score_Blue\0\Players_Blue\1 \GTV_CN\1\g_needpass\0\mode_current\2V2\server_gameplay\CPM
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 2v2 in arena 0
+0.2 ClientConnect: 0
+0.2 ClientUserinfoChanged: 0 n\Ignat\t\2\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+5.1 ClientBegin: 0
+7.. Item: 0 weapon_rocketlauncher
+12.2 Item: 0 ammo_rockets
+13.0 Item: 0 item_health_small
+13.2 Item: 0 item_health_small
+13.4 Item: 0 item_health_small
+14.+ Item: 0 item_health_small
+16.2 Item: 0 item_armor_combat
+23.4 Item: 0 item_health_mega
+26./ ClientDisconnect: 0
+97.- ShutdownGame:
+97.- ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \server_gameplay\CPM\g_maxGameClients\0\sv_maxclients\8\g_gametype\0\timelimit\60\fraglimit\30\dmflags\0\sv_floodProtect\0\sv_maxPing\0\sv_minPing\0\sv_dlRate\100\sv_maxRate\0\sv_minRate\0\sv_hostname\noname\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\GTV_CN\1\g_needpass\0
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+17.1 ShutdownGame:
+17.1 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\0\dmflags\0\fraglimit\30\timelimit\60\g_gametype\0\sv_maxclients\8\g_maxGameClients\0\server_gameplay\CPM\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\GTV_CN\1\g_needpass\0
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+29.4 ShutdownGame:
+29.4 ------------------------------------------------------------
+0.0 ------------------------------------------------------------
+0.0 InitGame: \server_gameplay\CPM\g_maxGameClients\0\sv_maxclients\8\g_gametype\0\timelimit\60\fraglimit\30\dmflags\0\sv_floodProtect\0\sv_maxPing\0\sv_minPing\0\sv_dlRate\100\sv_maxRate\0\sv_minRate\0\sv_hostname\noname\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_fps\20\sv_allowDownload\0\game\CPMA\gamename\cpma\gamedate\Apr 03 2019\gameversion\1.52\sv_arenas\1\GTV_CN\1\g_needpass\0
+0.0 Game_Start:  in arena 0
+0.0 Game_Start: 1v1 in arena 0
+6.5 ClientConnect: 0
+6.5 ClientUserinfoChanged: 0 n\Ignat\t\3\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+10.4 ClientUserinfoChanged: 0 n\Ignat\t\3\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+10.4 ClientBegin: 0
+10.4 ClientUserinfoChanged: 0 n\Ignat\t\0\model\tankjr/blue\c1\geggg\hc\100\w\0\l\0\a\0\f\0\nick\\c\0
+10.4 ClientBegin: 0
+26.. Item: 0 weapon_rocketlauncher
+28.. Item: 0 weapon_grenadelauncher
+30.2 Item: 0 item_armor_combat
+38.. Item: 0 item_health
+38.. Item: 0 item_health
+53.- Item: 0 item_armor_shard
+53.- Item: 0 item_armor_shard
+53.. Item: 0 item_armor_shard
+53.0 Item: 0 item_armor_shard
+54.0 Item: 0 item_health
+54.0 Item: 0 item_health
+54.3 Item: 0 ammo_slugs
+56.5 Item: 0 weapon_lightning
+58.+ Item: 0 item_health_small
+58.- Item: 0 item_health_small
+58.. Item: 0 item_health_small
+58./ Item: 0 item_health_small
+63.2 Item: 0 item_health
+71./ Item: 0 item_armor_combat
+77.5 Item: 0 weapon_shotgun
+79.0 Item: 0 item_armor_shard
+79.1 Item: 0 item_armor_shard
+83.1 Item: 0 item_armor_shard
+83.2 Item: 0 item_armor_shard
+83.4 Item: 0 item_armor_shard
+86.0 Item: 0 item_armor_shard
+86.1 Item: 0 item_armor_shard
+86.2 Item: 0 item_armor_shard
+86.4 Item: 0 item_armor_shard
+87.5 Item: 0 item_health
+88.- Item: 0 item_health
+88./ Item: 0 ammo_slugs
+94., ClientDisconnect: 0
+97.3 ShutdownGame:
+97.3 ------------------------------------------------------------

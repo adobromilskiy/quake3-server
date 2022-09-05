@@ -1,0 +1,84 @@
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\dmflags\0\fraglimit\20\timelimit\0\g_gametype\0\sv_maxclients\8\g_maxGameClients\0\capturelimit\8\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:09 ClientConnect: 0
+  0:09 ClientUserinfoChanged: 0 n\Ignat\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:11 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:11 ClientBegin: 0
+  0:17 Item: 0 item_armor_combat
+  0:18 Item: 0 ammo_slugs
+  0:20 Item: 0 item_armor_shard
+  0:20 Item: 0 item_armor_shard
+  0:20 Item: 0 item_armor_shard
+  0:20 Item: 0 item_armor_shard
+  0:23 Item: 0 item_armor_shard
+  0:27 Item: 0 item_armor_combat
+  0:30 Item: 0 weapon_grenadelauncher
+  0:33 Item: 0 weapon_rocketlauncher
+  0:40 Item: 0 item_health_small
+  0:40 Item: 0 item_health_small
+  0:42 Item: 0 ammo_lightning
+  0:44 Item: 0 item_health_small
+  0:44 Item: 0 item_health_small
+  0:45 Item: 0 weapon_lightning
+  0:51 Item: 0 weapon_railgun
+  0:55 Item: 0 weapon_lightning
+  1:06 ShutdownGame:
+  1:06 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \capturelimit\8\g_maxGameClients\0\sv_maxclients\8\g_gametype\0\timelimit\0\fraglimit\20\dmflags\0\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_dlRate\100\sv_maxRate\0\sv_minRate\0\sv_hostname\noname\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:11 ClientConnect: 0
+  0:11 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:14 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:14 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:14 ClientBegin: 0
+  0:20 Item: 0 weapon_rocketlauncher
+  0:22 Item: 0 weapon_grenadelauncher
+  0:25 Item: 0 item_armor_combat
+  0:28 Item: 0 weapon_grenadelauncher
+  0:30 Item: 0 ammo_shells
+  0:33 Item: 0 item_armor_shard
+  0:33 Item: 0 item_armor_shard
+  0:33 Item: 0 item_armor_shard
+  0:35 Item: 0 item_armor_combat
+  0:37 Item: 0 item_armor_shard
+  0:41 Item: 0 weapon_grenadelauncher
+  0:42 Item: 0 item_health_large
+  0:44 Item: 0 weapon_lightning
+  0:46 Item: 0 weapon_lightning
+  0:48 ClientDisconnect: 0
+  0:54 ShutdownGame:
+  0:54 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\noname\sv_minRate\0\sv_maxRate\0\sv_dlRate\100\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\dmflags\0\fraglimit\30\timelimit\30\g_gametype\0\sv_maxclients\8\g_maxGameClients\0\capturelimit\8\version\ioq3 1.36 linux-arm64 Sep  2 2022\com_gamename\Quake3Arena\com_protocol\71\mapname\cpm1a\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:06 ClientConnect: 0
+  0:06 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:09 ClientUserinfoChanged: 0 n\twist\t\0\model\tankjr/blue\hmodel\tankjr/blue\g_redteam\\g_blueteam\\c1\3\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:09 ClientBegin: 0
+  0:13 Item: 0 weapon_rocketlauncher
+  0:20 Item: 0 weapon_rocketlauncher
+  0:23 Item: 0 item_armor_combat
+  0:26 Item: 0 weapon_grenadelauncher
+  0:29 Item: 0 weapon_rocketlauncher
+  0:32 Item: 0 weapon_rocketlauncher
+  0:32 Item: 0 ammo_rockets
+  0:35 Item: 0 item_armor_shard
+  0:36 Item: 0 item_health_small
+  0:37 Item: 0 weapon_lightning
+  0:38 Item: 0 item_health_small
+  0:38 Item: 0 item_health_small
+  0:38 Item: 0 item_health_small
+  0:40 Item: 0 item_armor_shard
+  0:40 Item: 0 item_armor_shard
+  0:41 Item: 0 item_armor_shard
+  0:41 Item: 0 item_armor_shard
+  0:43 Item: 0 item_armor_combat
+  0:49 Item: 0 weapon_grenadelauncher
+  0:52 Item: 0 item_armor_combat
+  0:53 Item: 0 ammo_rockets
+  0:53 Item: 0 weapon_rocketlauncher
+  0:57 Item: 0 weapon_railgun
+  0:58 Item: 0 item_armor_shard
+  0:58 Item: 0 item_armor_shard
+  1:05 ClientDisconnect: 0
+  1:09 ShutdownGame:
+  1:09 ------------------------------------------------------------
