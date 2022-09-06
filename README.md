@@ -36,12 +36,5 @@ Default password for server is **quake3**. You can change it to set environment 
 
 Add *.cfg files into baseq3 directory and use exec command to load them.
 
+**cpma/autoexec.cfg** - default configuration file
 **baseq3/ffa.cfg** - configuration file for FFA mode. You can edit it to change server settings.
-
-#### CPMA changes
-
-- cpma/cfg-maps/ffamaps.txt
-   - add cpm1a map
-
-- cpma/cfg-maps/mapmodes.txt
-   - add FFA mode for cpm1a

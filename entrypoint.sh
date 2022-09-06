@@ -18,5 +18,5 @@ if [ -z "${SERVER_ARGS}" ]; then
 fi
 
 ${IOQ3DED_BIN} server \
-    +set dedicated 2 +seta rconPassword "${ADMIN_PASSWORD}" \
+    +set dedicated 2 +set rconPassword "${ADMIN_PASSWORD}" \
     ${SERVER_ARGS}

@@ -128,7 +128,7 @@ cpm17 2v2
 cpm18 tdm
 cpm18r tdm
 cpm19 ffa
-cpm1a 1v1 hm ffa
+cpm1a 1v1 hm
 cpm2 ffa
 cpm20 ffa
 cpm21 tdm
