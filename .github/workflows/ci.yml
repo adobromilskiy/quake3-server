@@ -1,8 +1,5 @@
 name: build
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
 
@@ -20,3 +17,10 @@ jobs:
         docker build -t adobromilskiy/quake3-server:latest .
         docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
         docker push adobromilskiy/quake3-server:latest
+
+    - name: build and push tagged image
+      if: github.event_name == 'push'
+      run: |
+        docker build -t adobromilskiy/quake3-server:github.ref_name .
+        docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
+        docker push adobromilskiy/quake3-server:github.ref_name
