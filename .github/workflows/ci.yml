@@ -18,9 +18,17 @@ jobs:
         docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
         docker push adobromilskiy/quake3-server:latest
 
-    - name: build and push tagged image
+    - name: build and push branched image
       if: github.event_name == 'push'
       run: |
-        docker build -t adobromilskiy/quake3-server:github.ref_name .
+        docker build -t adobromilskiy/quake3-server:${{ github.ref_name }} .
         docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
-        docker push adobromilskiy/quake3-server:github.ref_name
+        docker push adobromilskiy/quake3-server:${{ github.ref_name }}
+
+    - name: build and push tagged image
+      if: github.event_name == 'push' && github.event.ref_type == 'tag'
+      run: |
+        GIT_TAG="${GITHUB_REF#refs/tags/}"
+        docker build -t adobromilskiy/quake3-server:${GIT_TAG} .
+        docker login --username ${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_PASSWD }}
+        docker push adobromilskiy/quake3-server:${GIT_TAG}
