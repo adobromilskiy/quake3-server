@@ -38,3 +38,5 @@ Add *.cfg files into baseq3 directory and use exec command to load them.
 
 - **cpma/autoexec.cfg** - default configuration file
 - **baseq3/ffa.cfg** - configuration file for FFA mode. You can edit it to change server settings.
+- **baseq3/knife.cfg** - configuration file for KNIFE mode (only gauntlets). You can edit it to change server settings.
+- **baseq3/duel.cfg** - configuration file for 1v1 mode. You can edit it to change server settings.

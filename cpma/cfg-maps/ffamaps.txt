@@ -2,6 +2,7 @@
 # the first map will be the one rotated to if the server is idle
 # entries are "mapname [minplayers] [maxplayers] [fraglimit] [timelimit]"
 
+cpm1a
 !cpm16ffa	2 8
 !cpm18ffa	4 16
 cpm4	4 14
