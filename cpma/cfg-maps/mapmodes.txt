@@ -93,8 +93,8 @@ actf39 ctfs
 actf40 ctfs
 actf41 ctfs
 akumacpm1a 1v1 hm
-astronomybeta 1v1 hm
 astronomy_ix 1v1 hm
+astronomybeta 1v1 hm
 avrdm1b tdm
 b0_beta6 ca
 b1k ctfs
@@ -110,12 +110,14 @@ bones_a7 1v1 hm
 bones_a8 1v1 hm
 bring ctfs
 brmctf1 ctfs
+burgera2 1v1 hm
 calendar 1v1 hm
 calendar_v2 1v1 hm
 calendar_v3 1v1 hm
 calendar_v4 1v1 hm
 calendar_v5 1v1 hm
 calendar_v6 1v1 hm
+chipsa1 1v1 hm
 clobberedseal ntf ctf
 cos1_beta7b ca
 courage-b9 1v1 hm ffa
@@ -179,8 +181,8 @@ darkztn_b18 1v1 hm
 darkztn_b19 1v1 hm
 darkztn_rc 1v1 hm
 dismemberment 1v1 hm
-egypt-ctf ctfs
 eg_ctf1 ctfs
+egypt-ctf ctfs
 eizdm4-b15 1v1 hm
 ex3ctf1 ctfs
 falkoisgay 1v1
@@ -215,6 +217,7 @@ furiousheights 1v1 hm
 fuse 1v1 hm
 goldleaf 1v1 hm
 gt1 1v1 hm
+gt2r_alpha 1v1 hm
 gt3_beta1 1v1 hm
 gt3_beta2 1v1 hm
 gt3_beta3 1v1 hm
@@ -223,8 +226,13 @@ gt3_beta5 1v1 hm
 gt3_beta6 1v1 hm
 gt3_beta7 1v1 hm
 gt3_beta8 1v1 hm
+gt3_beta9 1v1 hm
 gt4_beta 1v1 hm
 gt4_t7-4 1v1 hm
+gt5_beta 1v1 hm
+gt6_a8 1v1 hm
+gt6_alpha 1v1 hm
+gt7_alpha 1v1 hm
 hcmctf3 ctfs
 hektik 1v1 hm
 hektik_b3 1v1 hm
@@ -289,6 +297,9 @@ pm2076_b11 1v1 hm
 pm221 2v2 ffa
 pm24_b1 1v1 hm
 pm24_b2 1v1 hm
+pm24_b3 1v1 hm
+pm24_b4 1v1 hm
+pm24_b5 1v1 hm
 pro-nodm9 1v1 hm
 pro-q3dm13 1v1 hm
 pro-q3dm6 1v1 hm 2v2 ffa ca
@@ -355,6 +366,7 @@ ra3map17 ca
 ra3map18 ca
 ra3map19 ca
 ra3map2 ca
+ra3map20 ca
 ra3map3 ca
 ra3map4 ca
 ra3map5 ca
@@ -371,11 +383,14 @@ simple-ctf2 ctfs
 simpsons_q3 ctfs
 sinister 1v1 hm
 sodab1 1v1 hm
+sodab10 1v1 hm ffa
+sodab10a 1v1 hm ffa
 sodab2 1v1 hm
 sodab3 1v1 hm
 sodab4 1v1 hm
 sodab5 1v1 hm
 sodab6 1v1 hm
+sodab7 1v1 hm
 stonekeep ctf
 tblm1 ctfs
 tblm2 ctfs
@@ -386,6 +401,11 @@ tblm6 ctfs
 tblm7 ctfs
 tblm8 ctfs
 tblm9 ctfs
+thcdm13 1v1 hm
+thct2 1v1 hm
+thct2a 1v1 hm
+thct7 1v1 hm
+thct7d 1v1 hm
 tm2_ad5 ctfs
 tm2_akuma ctfs
 tm2_amphetamine ctfs
@@ -414,13 +434,13 @@ ump1ctf5 ctfs
 ump1ctf6 ctfs
 ump1ctf7 ctfs
 ump1ctf8 ctfs
+ump2_bonus ctfs
 ump2ctf1 ctfs
 ump2ctf2 ctfs
 ump2ctf3 ctfs
 ump2ctf4 ctfs
 ump2ctf5 ctfs
 ump2ctf6 ctfs
-ump2_bonus ctfs
 ump3ctf1 ctfs
 ump3ctf2 ctfs
 ump3ctf3 ctfs
@@ -541,6 +561,7 @@ xfdm2 2v2
 xfdm4_beta2 1v1 hm ffa
 xpress ctfs
 xttower ctfs
+zokotourney1_b1 1v1 hm ffa
 ztn3dm1 1v1 hm 2v2
 ztn3dm1-ho 1v1 hm 2v2
 ztn3tourney1 1v1 hm 2v2
