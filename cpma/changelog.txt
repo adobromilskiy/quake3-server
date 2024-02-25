@@ -7,6 +7,413 @@ See the end of this file for known issues.
 Visit https://playmorepromode.com/ to access the latest documentation.
 
 
+Notes for version 1.53 (24 Oct 23)
+
+add: showing player handicap values in /players and the 1v1/HM scoreboard when not 100
+
+add: new SuperHUD elements: HitMarker and KillMarker (visible when hitting/killing an enemy)
+
+add: ch_crosshairHitColor <string> (default: "") colorizes the crosshair after hitting an enemy
+	ch_crosshairFragColor <string> (default: "") colorizes the crosshair after killing an enemy
+	set a CPMA color code ([0-9a-z]) to enable or leave empty to disable
+
+add: ch_crosshairPulse 2/3 will animate the crosshair's size after hitting/killing an enemy
+
+add: new media courtesy of deft
+	- higher resolution font sheets, icons, chat balloon and foe sprites
+	- new 3D models: armors, health, PUs, ammo, flags, medkit, backpack, shells, grenade
+	- new animated medals and animated chat balloon
+	- new icons for deaths/suicides and thawing
+	- improved shaders for better r_picmip/r_detailtextures/r_depthFade behavior on popular maps
+
+add: cg_newModels <0|1> (default: 1) uses deft's better 3D models
+
+add: cg_animateChatBalloon <0|1> (default: 1) enables a looping animation of the chat sprites
+
+add: ch_animateRewardIcons <0|1|2> (default: 1) sets the reward icon animation mode
+	0 - No animation
+	1 - Play animation once
+	2 - Play looped animation
+
+add: callvote warmupfire, vote_allow_warmupfire (default: 1), server_warmupFire (default: 0)
+	warmup fire lets you shoot weapons during CA round warm-ups
+	shots fired during round warm-ups only inflict damage/knockback to yourself,
+	including projectiles shot during round warm-ups that explode during the rounds
+
+add: speconly on/off entries in the team menu
+
+add: SuperHUD elements can now display CVar values using the same $(CVar) syntax as /con_echo
+	example: PostDecorate { text "Mode: $(mode_current)"; } will display the current game mode
+
+add: $(map) will display the map name or map script name when used in the SuperHUD or /con_echo
+
+add: new simple SuperHUD elements: MapLocation and Score_Difference (own minus enemy)
+
+add: new SuperHUD command to specify the space between items: spacing <amount>
+	relevant elements: Console, GameEvents, Chat, WeaponList, WeaponSelection, RewardIcons/Numbers
+	for WeaponList, it defaults to 4 to match 1.52 behavior
+	for WeaponSelection, 0 will default to 12.5% of the dimension to match 1.52 behavior
+
+add: new SuperHUD command to specify the fade-in duration: fadein <milliseconds>
+
+add: ch_animateScroll <0|1> (default: 0) enables scrolling animations in SuperHUD elements
+	relevant elements: Console, GameEvents, Chat, RewardIcons, RewardNumbers
+
+add: new demo player with rewind support that's only supported by compatible engines
+	it has a freecam mode and also allows PoV switching in non-multiview demos
+	a timeline bar is shown at the bottom of the screen for navigation purposes
+	when either moving the cursor or leaving the cursor at the bottom
+
+add: /demo_video <name> <fps> starts writing an .avi file when the new demo player is enabled
+
+add: /demo_stopvideo stops writing the .avi file when the new demo player is enabled
+
+add: /demo_players prints the list of players during demo playback
+
+add: /demo_view selects the view mode when the new demo player is enabled:
+	/demo_view default      : uses whatever view was recorded in the demo
+	/demo_view freecam      : allows the camera to move around freely
+	/demo_view toggleFreecam: toggles between freecam and the previous view
+	/demo_view prevPlayer   : follows the previous  player
+	/demo_view nextPlayer   : follows the next      player
+	/demo_view player <ID>  : follows the specified player
+
+add: /demo_seek jumps around in the demo when the new demo player is enabled:
+	/demo_seek relativeTime <N>: jumps N seconds ahead (or back if negative)
+	/demo_seek virtualTime <TS>: jumps to the timestamp (timeline bar values)
+	/demo_seek serverTime <TS> : jumps to the timestamp (raw demo     values)
+	/demo_seek nextMajorEvent  : jumps to the next     major event
+	/demo_seek prevMajorEvent  : jumps to the previous major event
+	/demo_seek nextMinorEvent  : jumps to the next     minor event
+	/demo_seek prevMinorEvent  : jumps to the previous minor event
+	/demo_seek nextFollowedKill: jumps to the next     followed kill
+	/demo_seek prevFollowedKill: jumps to the previous followed kill
+	timestamps are formatted as 'seconds' or 'minutes:seconds'
+
+add: /+demo_scrub enables demo scrubbing when the new demo player is enabled
+	moving the mouse to the left/right while the corresponding button is pressed
+	will move the demo back/forward in time
+
+add: cg_demoMapOverrides <0|1> (default: 1) allows the new demo player to display another map
+	the override list is loaded from "cfg-maps/demomaps.txt", where each line has the format
+	"DemoName DisplayName", e.g. "cpm3a cpm3b_b1" will display cpm3b_b1 instead of cpm3a
+
+add: cg_demoSkipPauses <0|1> (default: 0) instructs the new demo player to skip server pauses
+
+add: cg_demoUI <0|1> (default: 1) draws the demo player's user interface
+
+add: pressing F1 during demo playback will show the list of usable binds
+
+add: pressing F2 during demo playback will toggle cg_demoUI
+
+add: ch_locations <0|1> (default: 1) draws the players' locations in the team overlays
+
+add: the SuperHUD element GameEvents presents a streamlined feed of gameplay events
+	everyone can see deaths, thaws and flag pickups/drops/captures/returns
+	non-coaching spectators can also see major item pickups and power-up drops
+	demos older than CPMA 1.52 won't show pickups for non-powerup items (RA, MH)
+	demos older than CPMA 1.53 won't show the name of the player who dropped the flag
+
+add: ch_eventForceColors <0|1> (default: 0) enables the use of custom team colors for GameEvents
+	ch_eventOwnColor   <string> (default: "7") is the CPMA color code for your own  team
+	ch_eventEnemyColor <string> (default: "2") is the CPMA color code for the enemy team
+
+add: ch_chatLines <0 to 64> (default: 3) is the maximum line count Chat can draw
+
+add: ch_eventLines <0 to 64> (default: 3) is the maximum line count GameEvents can draw
+
+add: /colorlist prints all available color codes in their respective colors
+
+add: /hud_list prints all available SuperHUD elements
+
+add: new SuperHUD commands to customize highlights:
+	hlcolor <R G B A> | highlight color
+	hlsize <size>     | highlight size as percentage of the smallest dimension
+	hledges [edges]   | selects which edges of the outline rectangle are drawn
+	accepted hledges keywords: left, right, top, bottom, L, R, T, B, all, none
+	highlights are enabled in outline mode (all edges drawn) by default
+	to disable, use "hlsize 0" or "hlcolor R G B 0"
+	to enable fill mode, use "hlsize 100" or use any value greater or equal to 50
+	WeaponList has them disabled by default (hlsize is 0)
+
+add: new SuperHUD command that can only be used in !DEFAULT: reset
+	it resets all fields to their default values, allowing to clear flags such as monospace
+
+add: com_blood 2 draws a less obtrusive blood effect
+
+add: cg_weaponConfig_default|none|gauntlet|MG|SG|GL|RL|LG|RG|PG|BFG|hook <string> (default: "")
+	these are per-weapon config CVars executed upon weapon switch
+	cg_weaponConfig_default is used when the corresponding weapon config CVar is empty
+	cg_weaponConfig_none    is used when there isn't exactly 1 equipped first-person weapon
+	                        this happens when in a free-float camera view or in Multi-View
+
+add: cg_modeConfig_default|1v1|2v2|CA|CTF|CTFS|DA|FFA|FT|HM|NTF|TDM <string> (default: "")
+	these are per-mode config CVars executed when the game mode changes
+	cg_modeConfig_default is used when the corresponding mode config CVar is empty
+
+add: cg_teamConfig_free|red|blue|spec <string> (default: "")
+	these are per-team config CVars executed when the followed team changes
+
+add: cg_mapConfig_default <string> (default: "") is the fallback map config used when
+	the corresponding map config CVar (cg_mapConfig_<mapName>) is empty or undefined
+	example for cpm3a: cg_mapConfig_cpm3a is used when not empty, cg_mapConfig_default otherwise
+
+add: cg_lightningImpact 2 draws sparks in addition to the impact mark
+
+add: cg_fragSound <string> (default: "0") plays a sound after a kill
+	0 - No sound
+	1 - Tonal impact playing the note D
+	2 - Tonal impact playing the note E
+	3 - Tonal impact playing the note F#
+	4 - Tonal impact playing the note G
+	5 - Cork pop
+	6 - Cash register
+	7 - Grappling hook impact
+	leave at 0 or empty for no sound or specify a sound file path including the file extension
+	example: \cg_fragSound "sound/pure3/grapple/dink.wav"
+
+add: cg_zoomSensitivity <0.0 to 100.0> (default: 1) scales the mouse sensitivity when zoomed in
+	to match the behavior of older CPMA versions, set it to 1
+
+add: /togglezoom alternates between standard and zoomed in FOVs
+
+add: /cv is an alias for /callvote for the server console and rcon
+
+add: ui_swapMouseButtons <0|1> (default: 0) swaps the left and right mouse buttons in the UI
+	it applies to the main menu, the in-game menu and the multi-view demo playback UI
+	the live multi-view UI still uses +attack instead of a specific key or button
+
+add: a team's name will be kept across map changes if it isn't empty and the game type doesn't change
+
+chg: turned the "no nextSnap" CGame drop error into a console warning
+
+chg: team chat messages from spectators and coaches no longer include locations
+
+chg: misc_portal_surface camera wobble uses spawnflags like baseq3 again instead of being forced
+
+chg: traded a very frequent bug (hearing hit sounds after match/round starts and arena changes)
+	for a rare one (not hearing a hit sound under very unlikely circumstances)
+	this applies to demo playback of any CPMA version as well
+
+chg: ejected MG/SG shells inherit the yaw angle and account for crouching
+
+chg: showing the capture medal regardless of cg_oldCTFSounds (before: only when it was 0)
+
+chg: the maximum cg_fov value is 150 with a compatible engine using depth clamping, 130 otherwise
+
+chg: DEV gameplay is the same as PM2 except:
+	1v1: all spawns respect the far half rule, including initial spawns
+	1v1: spawn selection weighs horizontal and vertical distances differently
+	TDM: simple mega is enabled by default
+	TDM/2v2/FTAG: spawn selection is based on the distances to the closest teammate and enemy
+
+chg: disabled (most of) the command rate limiting when running a listen server
+
+chg: the WeaponList SuperHUD element now supports the following functionality:
+	- setting horizontal/vertical mode and weapon order with direction L|R|T|B
+	- bottom- and center-aligned vertical modes with alignv B and alignv C
+	- left- and right-aligned horizontal modes with alignh L and alignh R
+	- center-aligned horizontal mode with alignh C (or textalign C like before)
+	- background rectangle margins with the margins command
+	- customizable highlights with the hlsize, hlcolor and hledges commands
+	WeaponList has its own defaults to maintain backward compatibility:
+	hlsize 0;spacing 4;direction T;alignh L;alignv T
+
+chg: ch_consoleLines now has a minimum value of 0, which disables display
+
+chg: the Console SuperHUD element now behaves like GameEvents and supports:
+	- drawing from bottom to top with direction B
+	- a solid background color with margins per line with bgcolor, fill and margins
+	- right and center text alignment with textalign R|C
+	- text offsets with textoffset
+	- scrolling animations with ch_animateScroll 1
+
+chg: the mvw_TDM1-4 CVars are now registered and archived for convenience
+
+chg: movers always gib corpses and players they kill
+
+chg: improved team overlays with SuperHUD elements Team1-16 (old) and Team1-16_NME (new)
+	Team1-16     display your own/followed team
+	Team1-16_NME display the opposing team when a non-coaching spectator or watching a demo
+	with CPMA 1.53+, armor type and medkit are shown and non-team modes are supported
+	in 1v1/HM/DA, Team1 and Team1_NME are used
+	in FFA,       Team1-16 are used, sorted by scores and displaying scores
+	all these SuperHUD elements always have the monospace font option enabled
+	the new system uses less bandwidth while updating every snapshot instead of every second
+	with CPMA 1.53+ demos, the TargetStatus SuperHUD element can be shown for enemies
+
+chg: cleaner SuperHUD outlines for WeaponSelection and elements that have both "fill" and "color T"
+
+chg: CQ3 gameplay settings have been reverted to 1.48 status
+
+chg: now showing the health/armor/pickup stats of bots when running a listen server or playing 1v1/HM
+
+chg: tweaked the dynamic light properties of first-person weapon muzzle flashes:
+	- adjusted positions such that one can still light up walls when pressed against them
+	- the radius changes according to a continuous function to flicker less aggressively
+
+chg: increased the cg_gunOffset value ranges to x:[-10, 40] y:[-120, 130] z:[-60, 90]
+
+chg: increased the maximum number of entries in the demo menu to 2048
+
+chg: the visflags SuperHUD command now also accepts keywords to define the bitmask:
+	follow = 1 - visible when following a player "full-screen"
+	free   = 2 - visible in free-float camera view
+	coach  = 4 - visible in coach view (multi-view for team modes)
+	all    = 7 - visible in all scenarios
+	example: "visflags follow coach" is equivalent to "visflags 5"
+
+chg: removed the "nextmap" vote item because it stopped serving a purpose long ago
+
+chg: spawn points fade out of existence when too close to the camera
+
+chg: removed cg_drawRewards and added 2 new SuperHUD elements as replacement:
+	RewardIcons   | the medals
+	RewardNumbers | the number of medals
+	to learn how to replicate the look of cg_drawRewards, please refer to hud.cfg in the pk3 file
+
+chg: the sound for a new reward will get played even if the medal is already displayed
+
+chg: re-added the "draw3d" SuperHUD command for backward compatibility with old HUDs
+	also, "model" with no argument (which behaves the same) will no longer trigger an engine warning
+
+chg: flags can spawn a little higher to avoid disappearing (e.g. ojfc-05)
+
+fix: switching from one followed player to another could break the predicted player's animation state
+	this would sometimes affect the view weapon's torso attachment point, thereby hiding the weapon
+
+fix: cg_nudge wasn't always disabled when being a spectator
+
+fix: maps with too many locations could cause client disconnects on game mode changes
+	too many commands were sent due to too many config string changes
+	example: "map cpm14;wait 100;cv mode TDM"
+
+fix: when in overtime, switching from "timed overtime" to "sudden death" or "no overtime"
+	would only happen once the current overtime period completed
+
+fix: if you followed a player who left the arena and joined again while you were still in freecam,
+	his player model would not render in the world, you'd hear his frag sounds, etc.
+
+fix: if you followed a player who entered a different arena and you remained in freecam,
+	the scoreboard would show data for the arena the player joined instead of the one you're in
+
+fix: in rare scenarios, timeouts/pauses could reset the game clock as if no time had elapsed at all
+
+fix: the invisibility skull's position wasn't interpolated wrt crouching/standing state
+
+fix: drawing certain event entities (e.g. grenade explosions) as spawn points
+
+fix: forfeiting a 1v1/HM match with /speconly would put you back in the queue at intermission exit
+
+fix: when in free-float after following a player on a lift, the camera would shake when it was moving
+
+fix: loading the map config after a game type vote passes except when the config changes the game type
+
+fix: in CA with startrespawn 0, the start of the first round's countdown could fail to respawn players
+
+fix: the solid backgrounds of standard SuperHUD elements were not fading out
+
+fix: limited the grenade bounce sound spam (especially for grenades interacting with movers)
+
+fix: /speconly 0 when speconly was already disabled would move you into the spectator team
+
+fix: bots added to the red/blue/free teams during intermission now join once intermission ends
+
+fix: /addbot without the team now always puts the bot in the arena, not just in 1v1/HM/DA like before
+
+fix: aspect ratio of icons in weapon lists and team overlays
+
+fix: team and player names won't get truncated when set and ^ must be followed by a letter or a digit
+
+fix: cg_thirdPersonAngle and cg_thirdPersonRange were not updated through the demo player key binds
+
+fix: the LG beam's endpoint position was wrong in the following cases:
+	- cg_trueLightning > 0 in third-person view    (most visible when changing cg_thirdPersonAngle)
+	- cg_trueLightning   0 with the view model     (not accounting for crouch/land/... animations)
+	- all beams except the one from the view model (not accounting for crouch/land/... animations)
+
+fix: movers could disappear when playing sounds (e.g. MH lift on 13zone)
+
+fix: corpses from the dead body queue can no longer block movers nor force them to change direction
+
+fix: this partial fix affects score/name/player display, warm-up/countdown status, etc.
+	due to ancient bandwidth optimizations, when (re-)connecting to a server or loading a demo,
+	some important data is present twice but with no indication as to which version should be used
+	while there isn't always a way to prove which version is the right one,
+	we now pick differently when the choice is either provably correct or very likely to be
+
+fix: map rotation didn't validate the user-supplied arena indices before using them
+
+fix: map rotation could use arena settings from the wrong map when changing map_index manually
+	or loading a map without going through the map rotation system (/map, /cv map, etc.)
+
+fix: map rotation forced multi-arena maps straight into intermission when no timelimit was specified
+
+fix: the WeaponList SuperHUD element was allowed to draw in free-float view
+
+fix: the health and armor icons were not always showing up at the bottom of the duel scoreboard
+
+fix: resetting all movers on arena restarts (func_door/plat/button/bobbing/train/pendulum/rotating)
+	example: flags disappeared on ojfc-05 when the movers were in a high position at restart time
+
+fix: the "QUAD Across" location name in locs/cpm4a.cfg would display "UAD Across" with a bad color
+
+fix: colored location names could get truncated in the team overlays
+
+fix: bunch of broken multi-view things:
+	- com_blood 1 was drawing the blood of the followed players
+	- first-person crouching animations were missing when airborne
+	- first-person crouching animations weren't smoothed in zoomed view
+	- first-person crouching animations were missing in coach view
+	- one player's first-person landing animations were replicated to all coach views
+	- TargetName and TargetStatus were not set when looking at some players
+
+fix: handicap doesn't affect damage done to teammates anymore
+
+fix: negative damage events would quickly lead to client errors (incorrect health/armor in the HUD)
+	they could eventually lead to server errors as well (player deaths)
+
+fix: the announcer could warn about time and frag limits right after intermission exit
+
+fix: /callvote now validates the arena index to prevent memory corruption and crashes
+
+fix: the server info player list would be incomplete when a player name had a trailing caret (^)
+
+fix: loading maps from the UI on Linux would fail to load the corresponding map scripts (e.g. cpm24)
+	however, map script loads on Linux can still fail in general due to name case mismatches
+
+fix: after connecting or switching teams, everyone was being shown as unready in the scoreboard
+
+fix: the bot_minplayers logic would sometimes (try to) kick humans who are spectating bots
+
+fix: the advance width of lowercase 'j' in the Sansman font was too small, allowing glyphs to overlap
+
+fix: these votable items will be ignored and warned about when used in custom game mode configs:
+	- "map"  would throw a server in an infinite map loading loop
+	- "mode" would shut down a server QVM due to a fatal error
+
+fix: /callvote's help incorrectly filtered votable items based on the arena's game type
+	e.g. "startrespawn" was visible in CTFS (it shouldn't be) but wasn't in DA/CA (it should be)
+
+fix: flags spawning too low and falling through floors (e.g. q3wcp4)
+
+fix: game type votes could get overridden on multi-arena maps and some single-arena maps
+
+fix: in DA/HM, you were unable to respawn after the opponent left mid-match while you were dead
+
+fix: maps could appear more than once in the UI browser
+
+fix: the wrong game type could get loaded after starting a practice game through the UI
+
+fix: starting a FTAG practice game through the UI would yield the "Mode is incomplete" error
+
+fix: the scoreboard would flash during intermission when requesting new scores
+
+fix: overtime duration could be callvoted when overtime type wasn't timed
+
+fix: "/cv ot" would print the default time period instead of the active one
+
+
 Notes for version 1.52 (31 Mar 19)
 
 add: SuperHUD element RecordingDemo will only be visible when recording a demo
@@ -298,7 +705,7 @@ add: forfeit support and persistent scoreboards for duel (1v1 and HM)
 
 add: the scoreboard's spectator list now indicates who is speconly (S) and referee (R)
 
-add: new default SuperHUD config and new key textures (thanks df)
+add: new default SuperHUD config and new key textures (thanks deft)
 
 add: hud_takeScreenshots takes a screenshot for each SuperHUD config at the root of the "hud" directory
 	screenshots will be .jpg files if cg_useScreenShotJPEG is 1 and .tga otherwise
